@@ -38,7 +38,7 @@ All packaged neatly in *Python + Docker*!
 # 🏃‍♂️ Quick Start
 **1. Clone the Repository**
 ```bash
-git clone https://github.com/yourusername/universal-object-tracker.git
+git clone https://github.com/Apoo141104/Real-Time-Detection-of-Object-Missing-and-New-Object-Placement-in-Video.git
 cd universal-object-tracker
 ```
 **2. Install Requirements**
