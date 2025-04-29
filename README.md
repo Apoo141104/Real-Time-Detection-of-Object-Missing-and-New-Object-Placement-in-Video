@@ -40,31 +40,38 @@ All packaged neatly in *Python + Docker*!
 ```bash
 git clone https://github.com/yourusername/universal-object-tracker.git
 cd universal-object-tracker
-2. Install Requirements
+```
+**2. Install Requirements**
+```bash
 pip install -r requirements.txt
-3. Run the Tracker (Directly)
+```
+**3. Run the Tracker (Directly)**
+```bash
 python detect_missing_new_objects.py
-4. Or Run with Docker
+```
+**4. Or Run with Docker**
+```bash
 docker build -t universal-object-tracker .
 docker run -it -v $(pwd)/sample_video2.move:/app/sample_video2.move -v $(pwd)/outputs:/app/outputs universal-object-tracker
-📝 Usage
+```
 
-Place your input video (e.g., sample_video2.move) in the project folder.
-The script automatically saves:
-The processed output video → outputs/output.mp4
-Sample output frames (optional if you want to add)
-⚡ Performance
+# 📝 Usage
+- Place your input video (e.g., sample_video2.move) in the project folder.
+- The script automatically saves:
+ - The processed output video → outputs/output.mp4
+ - Sample output frames (optional if you want to add)
 
-FPS Achieved: ~1.54 FPS (YOLOv8 large, MacBook Pro M2)
-For faster results, try using a smaller YOLOv8 model (e.g., YOLOv8n) or run on a dedicated GPU.
-🧠 How It Works
+# ⚡ Performance
+- FPS Achieved: ~1.54 FPS (YOLOv8 large, MacBook Pro M2)
+- For faster results, try using a smaller YOLOv8 model (e.g., YOLOv8n) or run on a dedicated GPU.
 
-Detection: YOLOv8 detects objects in each frame.
-Tracking: DeepSORT assigns consistent IDs across frames.
-Event Logic:
-If an object disappears → flagged as missing
-If a new object appears → flagged as new
-Visualization:
-Bounding boxes
-Object labels
-Real-time counters drawn over video frames
+# 🧠 How It Works
+- **Detection:** YOLOv8 detects objects in each frame.
+- **Tracking:** DeepSORT assigns consistent IDs across frames.
+- **Event Logic:**
+ - If an object disappears → flagged as missing
+ - If a new object appears → flagged as new
+- **Visualization:**
+ - Bounding boxes
+ - Object labels
+ - Real-time counters drawn over video frames
