@@ -3,28 +3,28 @@
 # 🚀 Overview
 # Welcome to the Universal Object Tracker!
 This project is a real-time video analytics pipeline that can:  
-🔍 *Detect when an object goes missing from the scene*  
-🆕 *Detect when a new object enters the scene*
+- 🔍 *Detect when an object goes missing from the scene*  
+- 🆕 *Detect when a new object enters the scene*
 
 Built for the *Samajh.ai ML Engineer Intern* evaluation, it uses:  
-*YOLOv8* (for detection)  
-*DeepSORT* (for tracking)  
+- *YOLOv8* (for detection)  
+- *DeepSORT* (for tracking)  
 All packaged neatly in *Python + Docker*!  
 
 # ✨ Features
-* *Real-Time Object Detection* with YOLOv8 (large model for higher accuracy)  
-* *Multi-Object Tracking* using DeepSORT (MobileNet embedder)  
-* *Event Detection:*
-  * Flags missing objects  
-  * Highlights new objects  
-* *Visual Feedback:*
-  * Color-coded bounding boxes  
-  * Blinking red cross (X) for missing objects  
-  * Real-time object counts per class  
-* *Performance Monitoring:*
-  * FPS tracking  
-  * Processing time tracking  
-* *Dockerized Setup* for smooth and reproducible environments  
+- *Real-Time Object Detection* with YOLOv8 (large model for higher accuracy)
+- *Multi-Object Tracking* using DeepSORT (MobileNet embedder)  
+- *Event Detection:*
+  - Flags missing objects  
+  - Highlights new objects  
+- *Visual Feedback:*
+  - Color-coded bounding boxes  
+  - Blinking red cross (X) for missing objects  
+  - Real-time object counts per class  
+- *Performance Monitoring:*
+  - FPS tracking  
+  - Processing time tracking  
+- *Dockerized Setup* for smooth and reproducible environments  
 
 # 📸 Sample
 <img width="1280" alt="image" src="https://github.com/user-attachments/assets/6730e42e-93a6-4fea-b1d6-8e46996b5ec3" />
