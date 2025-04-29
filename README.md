@@ -58,8 +58,8 @@ docker run -it -v $(pwd)/sample_video2.move:/app/sample_video2.move -v $(pwd)/ou
 # 📝 Usage
 - Place your input video (e.g., sample_video2.move) in the project folder.
 - The script automatically saves:
- - The processed output video → outputs/output.mp4
- - Sample output frames (optional if you want to add)
+ 1. The processed output video → outputs/output.mp4
+ 2. Sample output frames (optional if you want to add)
 
 # ⚡ Performance
 - FPS Achieved: ~1.54 FPS (YOLOv8 large, MacBook Pro M2)
@@ -69,9 +69,9 @@ docker run -it -v $(pwd)/sample_video2.move:/app/sample_video2.move -v $(pwd)/ou
 - **Detection:** YOLOv8 detects objects in each frame.
 - **Tracking:** DeepSORT assigns consistent IDs across frames.
 - **Event Logic:**
- - If an object disappears → flagged as missing
- - If a new object appears → flagged as new
+ 1. If an object disappears → flagged as missing
+ 2. If a new object appears → flagged as new
 - **Visualization:**
- - Bounding boxes
- - Object labels
- - Real-time counters drawn over video frames
+ 1. Bounding boxes
+ 2. Object labels
+ 3. Real-time counters drawn over video frames
