@@ -43,7 +43,7 @@ cd universal-object-tracker
 2. Install Requirements
 pip install -r requirements.txt
 3. Run the Tracker (Directly)
-python universal_object_tracker.py
+python detect_missing_new_objects.py
 4. Or Run with Docker
 docker build -t universal-object-tracker .
 docker run -it -v $(pwd)/sample_video2.move:/app/sample_video2.move -v $(pwd)/outputs:/app/outputs universal-object-tracker
